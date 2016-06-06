@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+	<iframe id="ytplayer" type="text/html" width="640" height="390"
+	  src="http://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"
+	  frameborder="0"/>
+    <div class="jumbotron">
+        {% placeholder "feature" %}
+    </div>
+    <div>
+        {% placeholder "content" %}
+    </div>
+{% endblock content %}
